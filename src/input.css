@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.show {
+  display: flex;
+  transition: right 0.9s ease-in-out; /* Add a transition for smooth sliding */
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    right: -300px; /* Start off-screen */
+  }
+  to {
+    right: 0; /* Slide in to the screen */
+  }
+}
+
+.drop-down:hover .drop-down-items {
+  display: block;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

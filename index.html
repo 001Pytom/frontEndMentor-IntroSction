@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro-Section</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="lg:h-screen ">
+
+    <!-- nav -->
+    <nav class=" container flex items-center justify-between lg:justify-around w-full  space-x-14 mx-auto p-6">
+        <img src="./images/logo.svg" alt="brand" class="brand">
+        <button id="menu-toggle" class="flex  lg:hidden "><img src="./images/icon-menu.svg" alt="icon-menu"></button>
+
+
+        <!-- mobile -->
+        <div
+            class="menu-items-mobile    lg:hidden  flex-col  bg-white h-screen absolute right-0 top-0  w-[60%] z-10 items-start justify-start space-y-4 p-4 text-lg hidden ">
+            <button id="menu-close" class=" menu-closed flex  self-end"><img src="./images/icon-close-menu.svg"
+                    alt="icon-close-menu"></button>
+            <div class="menu-items-left flex   text-grey1 hover:text-black flex-col  w-full gap-6">
+
+                <div class="drop-down relative ">
+                    <div class="feautures flex items-center cursor-pointer ">
+                        Features
+                        <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" class="ml-2">
+                    </div>
+                    <div class="drop-down-items  right-0 bg-white shadow-xl w-40 space-y-2 py-5 px-6  hidden">
+                        <div class="todo  flex items-center gap-3"> <img src="./images/icon-todo.svg" alt="icon-todo">
+                            Todo List </div>
+                        <div class="calendar flex items-center gap-3"> <img src="./images/icon-calendar.svg"
+                                alt="icon-calendar">Calendar </div>
+                        <div class="reminder flex items-center gap-3"> <img src="./images/icon-reminders.svg"
+                                alt="icon-reminders"> Remainder
+                        </div>
+                        <div class="planning flex items-center gap-3"> <img src="./images/icon-planning.svg"
+                                alt="icon-planning">Planning </div>
+                    </div>
+                </div>
+                <div class="drop-down ">
+                    <div class="Company flex items-center cursor-pointer relative">
+                        Company
+                        <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" class="ml-2">
+                    </div>
+                    <div class="drop-down-items  hidden   bg-white shadow-xl w-32 space-y-2 py-3 px-6 ">
+                        <a href="#">History</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+                <a href="#">Career</a>
+                <a href="#">About</a>
+            </div>
+            <div class="menu-items-right flex items-center space-x-4 flex-col gap-5">
+                <button class="">Login</button>
+                <button class="border-2 rounded-lg px-12 py-2 hover:border-AlmostBlack">Register</button>
+            </div>
+        </div>
+
+
+        <!-- desktop -->
+        <div class="menu-items hidden  lg:flex lg:flex-1 lg:items-center lg:justify-between ">
+            <div class="menu-items-left flex items-center space-x-8 text-grey1 hover:text-black">
+                <div class="drop-down relative ">
+                    <div class="feautures flex items-center cursor-pointer ">
+                        Features
+                        <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" class="ml-2">
+                    </div>
+                    <div
+                        class="drop-down-items absolute right-0 bg-white shadow-xl w-36 space-y-2 py-5 px-6  hidden  cursor-pointer">
+                        <div class="todo  flex items-center gap-3"> <img src="./images/icon-todo.svg" alt="icon-todo">
+                            Todo List </div>
+                        <div class="calendar flex items-center gap-3"> <img src="./images/icon-calendar.svg"
+                                alt="icon-calendar">Calendar </div>
+                        <div class="reminder flex items-center gap-3"> <img src="./images/icon-reminders.svg"
+                                alt="icon-reminders"> Remainder
+                        </div>
+                        <div class="planning flex items-center gap-3"> <img src="./images/icon-planning.svg"
+                                alt="icon-planning">Planning </div>
+                    </div>
+                </div>
+                <div class="drop-down ">
+                    <div class="Company flex items-center cursor-pointer relative">
+                        Company
+                        <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" class="ml-2">
+                    </div>
+                    <div
+                        class="drop-down-items  absolute  bg-white shadow-xl w-28 leading-7 cursor-pointer py-5 px-5 hidden">
+                        <a href="#">History</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+                <a href="#">Career</a>
+                <a href="#">About</a>
+            </div>
+            <div class="menu-items-right flex items-center space-x-4">
+                <button class="">Login</button>
+                <button class="border-2 rounded-lg px-5 py-2 hover:border-AlmostBlack">Register</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hero Section  -->
+    <div
+        class="hero container w-full  flex flex-col-reverse lg:flex-row items-center lg:items-end  justify-between mx-auto lg:max-w-6xl  ">
+
+        <div class="hero-left space-y-6 md:space-y-7 lg:space-y-9 p-5 lg:p-0 text-center lg:text-left ">
+            <h1 class=" text-4xl md:text-5xl lg:text-7xl font-bold">Make <br class="hidden lg:block">
+                remote work</h1>
+            <p class="text-grey1 lg:w-96  text-lg md:text-xl">Get your team in sync. no mtter your location.
+                Streamline
+                processes,
+                create team
+                rituals, and
+                watch productivity soar.</p>
+            <button
+                class="bg-AlmostBlack text-AlmostWhite text-base font-bold outline-none  border-2 px-6 py-2 rounded-lg hover:bg-transparent hover:text-black  hover:border-black transition-all">
+                learn more
+            </button>
+            <div class="icons flex items-center justify-around gap-4 pt-10">
+                <img src="./images/client-databiz.svg" alt="client-databiz" class="w-20 md:w-25">
+                <img src="./images/client-audiophile.svg" alt="client-audiophile" class="w-20 md:w-25">
+                <img src="./images/client-meet.svg" alt="client-meet" class="w-20 md:w-25">
+                <img src="./images/client-maker.svg" alt="client-maker" class="w-20 md:w-25">
+            </div>
+        </div>
+
+        <div class="hero-right container w-[28rem] hidden lg:flex lg:self-start      ">
+            <img src="./images/image-hero-desktop.png" alt="image-hero-desktop" class=" self-start h-full">
+        </div>
+        <div class=" hero-right container  w-full  block lg:hidden ">
+            <img src="./images/image-hero-mobile.png" alt="image-hero-mobile" class="w-full">
+        </div>
+    </div>
+
+
+    <!-- js -->
+    <Script>
+        const ham = document.getElementById("menu-toggle")
+        ham.addEventListener('click', e => {
+            document.querySelector('.menu-items-mobile').classList.add("show")
+        })
+
+
+        const close = document.getElementById("menu-close")
+        close.addEventListener('click', e => {
+            document.querySelector('.menu-items-mobile').classList.remove("show")
+        })
+    </Script>
+
+</body>
+
+</html>
